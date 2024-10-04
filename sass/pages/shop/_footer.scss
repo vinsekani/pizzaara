@@ -40,3 +40,15 @@ ul li{
     gap:1em;
     color: white;
 }
+
+
+// MEDIA QUIRIES
+
+@media screen and (max-width:600px){
+    .f-container{
+       width: 100%;
+       flex-direction: column;
+    }
+
+    
+}

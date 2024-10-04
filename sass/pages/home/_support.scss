@@ -11,10 +11,29 @@
 .support-box{
     margin-top: 3em;
         background-color: #F4F7FB;
-        @include flex(center,center,column);
+        // @include flex(center,center,column);
         padding: 1.5em 7em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
 }
 
 .support-img{
     margin-top: -2em;
+}
+
+// MEDIA QUIRIES
+
+@media screen and (max-width: 600px){
+.support-box{
+    margin-top: 3em;
+    background-color: #F4F7FB;
+    padding: 1.5em 7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: -7em;
+}
 }

@@ -3,12 +3,12 @@
 
 
 
-.for-you{
+.for-you-shop{
     @include flex(space-between, center);
    }
 
 
-   .spacial-box{
+   .spacial-box-shop{
     margin-top: 7em;
 background-color: #F4F7FB;
 @include flex(center,center,column);
@@ -35,8 +35,15 @@ padding: 0.5em 3em;
 
 // MEDIA QUIRIES
 
-@media(max-width:600px){
- 
+@media screen and (max-width:600px){
+     .for-you-shop{
+        width: 100%;
+        flex-direction: column;
+     }
+
+     .Special-menu{
+        font-size: 10px;
+     }
     
   
 }

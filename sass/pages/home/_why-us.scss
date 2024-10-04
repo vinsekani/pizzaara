@@ -44,6 +44,28 @@ margin: 50px 5%;
 
 }
 
+// MEDIA QUIRIES
+
+@media screen and (max-width: 600px){
+    
+    .why-us{
+        width: 100%;
+    }
+
+    .why-us-imgs{
+        width: 100%;
+        display: none;
+    }
+
+    .why-we{
+        width: 100%;
+        margin-left: 2em;
+    }
+
+    .main-fresh-pizza{
+        width: 100%;
+    }
+}
 
 
 

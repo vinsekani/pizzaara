@@ -25,7 +25,8 @@
            }
      
            .for-you{
-            @include flex(space-between, center);
+           display: flex;
+           justify-content: space-between;
            }
 
            .spacial-box{
@@ -63,6 +64,25 @@
             margin-top: -3.5em;
            }
      }
+
+ 
+
+    //  MEDIA QUIRIES
+     @media screen and (max-width: 600px){
+
+      .for-you{
+        width: 100%;
+        flex-direction: column;
+        // margin-left: 5em;
+      }
+
+      .view{
+        margin-left: 6.5em;
+      }
+
+
+     }
+
 
 
    

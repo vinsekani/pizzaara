@@ -82,10 +82,38 @@ margin-right:10em;
     }
 
    .ratings{
-    @include flex(space-between, center);
+    @include flex(space-between, start);
    }
 
    .main-pizza{
     margin-left: 6em;
+   }
+
+
+
+// MEDIA QUARIES
+   @media screen and (max-width: 600px){
+    h1{
+        width: 100%;
+        font-size: 40px;
+    }
+
+    p{
+        font-size: 10px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .hero-right{
+        display: none;
+    }
+
+    .ratings{
+        width: 100%;
+        flex-direction: column;
+        margin-left: 8em;
+    }
+
+    
    }
 
