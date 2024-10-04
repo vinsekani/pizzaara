@@ -5,6 +5,10 @@ nav {
   .nav {
     @include flex(space-between, center);
   }
+
+  .nav-left{
+    cursor: pointer;
+  }
   .nav-center {
     ul {
       @include flex(space-between, center);

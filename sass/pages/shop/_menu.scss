@@ -1,0 +1,42 @@
+@use "../../utilities/variables" as *;
+@use "../../utilities/mixins" as *;
+
+
+
+.for-you{
+    @include flex(space-between, center);
+   }
+
+
+   .spacial-box{
+    margin-top: 7em;
+background-color: #F4F7FB;
+@include flex(center,center,column);
+padding: 0.5em 3em;
+   }
+
+   .special-btn-shop{
+    padding: 15px 40px;
+    color: white;
+    background-color: black;
+    margin-bottom: -4em;
+    margin-top: 1em;
+    cursor: pointer;
+   }
+
+   .for-you-img{
+    margin-top: -4em;
+   }
+
+   .new-menu{
+    @include flex(center,center,column);
+    margin-top: 7em;
+}
+
+// MEDIA QUIRIES
+
+@media(max-width:600px){
+ 
+    
+  
+}

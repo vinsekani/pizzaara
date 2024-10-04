@@ -1,15 +1,27 @@
 @use"./variables" as *;
 
 *{
-    margin: 0 auto;
+    margin:0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body{
+    font-family: "Kanit", sans-serif;
+    width: 80%;
+    margin: 0 auto;
+}
+
+ul{
+    list-style: none;
+}
+
+
+
 a{
 text-decoration: none;
 color:$black;
-padding: 7px
+padding: 4px
 }
 
 ul, li{
@@ -17,10 +29,6 @@ ul, li{
     text-transform: capitalize;
 }
 
-.container{
-    width: 80%;
-    margin: 0 auto;
-}
 
 
 

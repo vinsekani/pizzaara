@@ -1,0 +1,20 @@
+@use "../../utilities/variables" as *;
+@use "../../utilities/mixins" as *;
+
+
+.need{
+    @include flex(center,center,column);
+            margin-top: 7em;
+         
+}
+
+.support-box{
+    margin-top: 3em;
+        background-color: #F4F7FB;
+        @include flex(center,center,column);
+        padding: 1.5em 7em;
+}
+
+.support-img{
+    margin-top: -2em;
+}
