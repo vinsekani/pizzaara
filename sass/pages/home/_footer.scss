@@ -11,6 +11,16 @@ footer{
         color: white;
     }
 
+.f-list{
+    li{
+        
+        a{
+            color: white;
+           
+        }
+    }
+}
+
     
 }
 
@@ -27,7 +37,7 @@ footer{
 }
 
 .f-button{
-    padding: 19px;
+    padding: 18px;
         color:white;
         background-color: orange;
         border: none;
@@ -47,13 +57,16 @@ footer{
        color:#333333
 }
 
-.social-logo{
-   gap: 1em;
+.social-logos{
+display: flex;
+gap: 1em;
+cursor: pointer;
 }
 
 ul li{
     gap:1em;
     color: white;
+
 }
 
 
@@ -62,22 +75,17 @@ ul li{
 .f-footer{
     justify-content: center;
     align-items: center;
+
+    .f-button{
+        padding: 10px;
+    }
 }
 
-.f-button{
-    padding: 10px;
-    color:white;
-    background-color: orange;
-    border: none;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    cursor: pointer;
-}
 
 
 .search-input-footer{
     font-size: 16px;
-       padding: 16px;
+       padding: 9px;
        margin-left: 14px;
        outline: none;
        border: none;

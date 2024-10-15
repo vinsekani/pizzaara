@@ -2,8 +2,11 @@
 @use "../../utilities/mixins" as *;
 nav {
   background-color: $light-grey;
+  
   .nav {
     @include flex(space-between, center);
+    width: 80%;
+    margin: 0 auto;
   }
   .nav-center {
     ul {
@@ -12,6 +15,7 @@ nav {
         a {
           padding: 10px;
           display: inline-block;
+          color: black;
           &:hover {
             background-color: $primary-color;
             color: white;

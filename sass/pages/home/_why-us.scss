@@ -31,10 +31,12 @@ margin: 50px 5%;
 }
 
 .bg-img{
-    @include flex(center,center);
+    // @include flex(center,center);
         background-color: black;
         border-radius: 50%;
         padding: 10px;
+        text-align: center;
+        align-items: center;
 }
 
 .main-fresh-pizza{
@@ -64,6 +66,17 @@ margin: 50px 5%;
 
     .main-fresh-pizza{
         width: 100%;
+    }
+
+    .pizza-pizza-pizza{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        padding: 10px;
+
+    
     }
 }
 

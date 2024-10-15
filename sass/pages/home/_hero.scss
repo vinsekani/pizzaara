@@ -1,24 +1,24 @@
 @use "../../utilities/mixins" as *;
 @use "../../utilities/variables" as *;
 
-section{
-    .hero{
-        @include flex(space-between, center);
-        margin-top: 1em;
+// section{
+//     .hero{
+//         @include flex(space-between, center);
+//         margin-top: 1em;
         
-    }
+//     }
 
-    .search{
-      width:max-content; 
-      display: flex;
-      align-items: center;
-      border-top-right-radius:0;
-      border-bottom-right-radius:0;
-      background: #fff;
-      border: 2px solid #F4F7FB;
-      padding-left: 10px;
+//     .search{
+//       width:max-content; 
+//       display: flex;
+//       align-items: center;
+//       border-top-right-radius:0;
+//       border-bottom-right-radius:0;
+//       background: #fff;
+//       border: 2px solid #F4F7FB;
+//       padding-left: 10px;
 
-    }
+//     }
 
     .search-input{
        font-size: 16px;
@@ -47,73 +47,195 @@ margin-right:10em;
         cursor: pointer;
     }
 
-    .hero-right{
-        margin-top:3em;
-    }
+//     .hero-right{
+//         margin-top:3em;
+//     }
 
-    .p1{
-        margin-top: 0.5em
-    }
+//     .p1{
+//         margin-top: 0.5em
+//     }
 
-    }
+//     }
 
-    .box{
-        margin-top: 2em;
-        background-color: #F4F7FB;
-        @include flex(center,center,column);
-        padding: 2em;
-    }
+//     .box{
+//         margin-top: 2em;
+//         background-color: #F4F7FB;
+//         @include flex(center,center,column);
+//         padding: 2em;
+//     }
 
-    .img{
-        @include flex(center,center);
+    // .img{
+    //     @include flex(center,center);
+    //     background-color: black;
+    //     border-radius: 50%;
+    //     padding: 10px;
+       
+    // }
+
+//     h4{
+//         margin-top: 1em;
+//     }
+
+//     h1{
+//         font-size: 3.5rem;
+//         margin-top:10px
+//     }
+
+//    .ratings{
+//     @include flex(space-between, start);
+//    }
+
+//    .main-pizza{
+//     margin-left: 6em;
+//    }
+
+
+
+// // MEDIA QUARIES
+//    @media screen and (max-width: 600px){
+    
+//     h1{
+//         width: 100%;
+//         font-size: 20px;
+//     }
+
+//     p{
+//         font-size: 10px;
+//         flex-wrap: wrap;
+//         width: 100%;
+//     }
+
+//     .hero-right{
+//         display: none;
+//     }
+
+//     .ratings{
+//         width: 100%;
+//         flex-direction: column;
+//         margin-left: 8em;
+//     }
+
+    
+//    }
+
+
+
+
+
+
+.fa-solid{
+    cursor: pointer;
+}
+
+.hero{
+    display: flex;
+   justify-content: space-between;
+   margin-top: 3em;
+}
+
+.ratings{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+// .img{
+//     background-color: black;
+//     border-radius: 90%;
+//     padding: 20px;
+//     margin-top: 2em;
+// }
+
+.box{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #F4F7FB;
+    padding: 20px;
+    margin-top: 2em;
+
+    img{
         background-color: black;
         border-radius: 50%;
         padding: 10px;
-       
     }
 
-    h4{
-        margin-top: 1em;
-    }
+}
 
+.hero-left{
     h1{
-        font-size: 3.5rem;
-        margin-top:10px
+        font-size: 40px;
     }
 
-   .ratings{
-    @include flex(space-between, start);
-   }
+    .p1{
+        font-size: 15px;
+    }
+}
 
-   .main-pizza{
-    margin-left: 6em;
-   }
+.hero-p-img{
+    display: flex;
+    gap: 1em;
+}
 
+.hero-right{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 
 
 // MEDIA QUARIES
    @media screen and (max-width: 600px){
-    h1{
-        width: 100%;
-        font-size: 40px;
+    .hero-left{
+        h1{
+            font-size: 20px;
+        }
+        .p1{
+            font-size: 10px;
+        }
     }
 
-    p{
-        font-size: 10px;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    .hero-right{
-        display: none;
+    .box{ 
+        padding: 40px;
     }
 
     .ratings{
         width: 100%;
         flex-direction: column;
-        margin-left: 8em;
     }
+    .hero-right{
+        display: none;
+       }
 
-    
+       .search-input{
+        font-size: 16px;
+        padding: 16px;
+        margin-left: 14px;
+        outline: none;
+        border: none;
+        background:transparent;
+        color:#333333
+ 
+     }
+ 
+     form{
+ @include flex(center,center);
+ margin-right:1em; 
+ 
+     }
+     
+     .button{
+         padding: 8px;
+         color:white;
+         background-color: black;
+         border: none;
+         border-top-right-radius: 10px;
+         border-bottom-right-radius: 10px;
+         cursor: pointer;
+     }
    }
+
+
+
 
